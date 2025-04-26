@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+}
+
+.square {
+    width: 30%;
+    height: 100px;
+    background-image: linear-gradient(145deg, #c947c2, #d35ed3);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.title {
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btnYes, .btnNo {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnYes {
+    background-color: #c2fbd7;
+    color: green;
+}
+
+.btnNo {
+    background-color: #ffa7a7;
+    color: darkred;
+}
+
+/* Kalp stil ayarları */
+.heart {
+    position: fixed; /* Kalplerin konumunu sabitler */
+    font-size: 40px;
+    user-select: none;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes heartAnimation {
+    0% {
+        transform: translateY(0) translateX(0) scale(.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(100px) scale(1.5);
+        opacity: 0;
+    }
+}
